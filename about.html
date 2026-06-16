@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About | Christ Impact Ministries International</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: "#D4AF37",
+              dark: "#0A0A0A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-dark text-white overflow-x-hidden">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-gold/10"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between h-20">
+          <!-- LOGO -->
+          <div class="flex items-center gap-4">
+            <img
+              src="./logo/logo.jpeg"
+              alt="Church Logo"
+              class="w-14 h-14 rounded-full border border-gold/30"
+            />
+
+            <div>
+              <h2 class="font-bold uppercase text-sm">
+                Christ Impact Ministries
+              </h2>
+
+              <p class="text-xs text-gold uppercase tracking-[0.2em]">
+                Doing The Works Of God
+              </p>
+            </div>
+          </div>
+
+          <!-- MENU -->
+          <!-- DESKTOP MENU -->
+          <nav
+            class="hidden xl:flex items-center gap-8 text-[12px] uppercase tracking-[0.18em]"
+          >
+            <!-- HOME -->
+            <a href="index.html" class="hover:text-gold transition"> Home </a>
+
+            <!-- ABOUT DROPDOWN -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-gold transition"
+              >
+                About
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute top-full left-0 mt-4 w-60 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+              >
+                <a
+                  href="about.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  About CIMI
+                </a>
+
+                <a
+                  href="beliefs.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  What We Believe
+                </a>
+
+                <a
+                  href="leadership.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Leadership
+                </a>
+              </div>
+            </div>
+
+            <!-- MINISTRY DROPDOWN -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-gold transition"
+              >
+                Ministry
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute top-full left-0 mt-4 w-64 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+              >
+                <a
+                  href="ministries.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Ministries
+                </a>
+
+                <a
+                  href="training.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Training & Discipleship
+                </a>
+
+                <a
+                  href="missions.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Missions
+                </a>
+
+                <a
+                  href="events.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Events
+                </a>
+              </div>
+            </div>
+
+            <!-- MEDIA DROPDOWN -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-gold transition"
+              >
+                Media
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute top-full left-0 mt-4 w-56 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+              >
+                <a
+                  href="media.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Sermons & Media
+                </a>
+
+                <a
+                  href="gallery.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Gallery
+                </a>
+              </div>
+            </div>
+
+            <!-- GET INVOLVED -->
+            <div class="relative group">
+              <button
+                class="flex items-center gap-2 hover:text-gold transition"
+              >
+                Get Involved
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute top-full left-0 mt-4 w-52 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+              >
+                <a
+                  href="give.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Give
+                </a>
+
+                <a
+                  href="join.html"
+                  class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+                >
+                  Join The Vision
+                </a>
+              </div>
+            </div>
+
+            <!-- CONTACT -->
+            <a href="contact.html" class="hover:text-gold transition">
+              Contact
+            </a>
+          </nav>
+
+          <!-- CTA -->
+          <a
+            href="contact.html"
+            class="hidden md:inline-flex px-6 py-3 border border-gold text-gold hover:bg-gold hover:text-black transition duration-300 uppercase tracking-widest text-xs"
+          >
+            Worship With Us
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="relative h-[70vh] flex items-center justify-center text-center overflow-hidden"
+    >
+      <img
+        src="./assets/service.jpeg"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt=""
+      />
+
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative z-10 px-6">
+        <p class="uppercase tracking-[0.35em] text-gold mb-4">About CIMI</p>
+
+        <h1 class="text-4xl md:text-6xl font-black uppercase leading-tight">
+          About
+          <span class="block text-gold"> Christ Impact Ministries </span>
+        </h1>
+
+        <p class="text-gray-300 mt-6 max-w-3xl mx-auto text-lg">
+          A ministry committed to preaching Christ Jesus to the nations,
+          demonstrating God’s Kingdom in power and the Holy Spirit.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-24 bg-[#050505]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="uppercase tracking-[0.35em] text-gold text-sm mb-4">
+              Who We Are
+            </p>
+
+            <h2
+              class="text-3xl md:text-5xl font-black uppercase leading-[1.05] mb-8"
+            >
+              Raising A Generation For
+              <span class="block text-gold"> Kingdom Impact </span>
+            </h2>
+
+            <p class="text-gray-400 text-lg leading-relaxed mb-6">
+              Christ Impact Ministries International (CIMI) exists to preach
+              Christ Jesus to the nations, demonstrate the power of God's
+              Kingdom, and raise Christ-centered generations grounded in
+              biblical truth.
+            </p>
+
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Founded upon the authority of Scripture and the Lordship of Jesus
+              Christ, CIMI seeks to transform lives through evangelism,
+              discipleship, prayer, healing, missions, and spiritual
+              empowerment.
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/paster.jpeg"
+              class="w-full h-[600px] object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTTO / VISION / MISSION -->
+    <section class="py-24 bg-black">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="border border-gold/10 p-10 bg-white/[0.03]">
+            <h3 class="text-2xl font-bold text-gold mb-6">Motto</h3>
+
+            <p class="text-gray-300 text-lg">“Doing the Works of God”</p>
+
+            <p class="text-gray-500 mt-4">John 14:12</p>
+          </div>
+
+          <div class="border border-gold/10 p-10 bg-white/[0.03]">
+            <h3 class="text-2xl font-bold text-gold mb-6">Vision</h3>
+
+            <p class="text-gray-400">
+              To do the great works of the Lord, preaching Christ Jesus to the
+              nations and demonstrating God's Kingdom in power and the Holy
+              Spirit.
+            </p>
+          </div>
+
+          <div class="border border-gold/10 p-10 bg-white/[0.03]">
+            <h3 class="text-2xl font-bold text-gold mb-6">Mission</h3>
+
+            <p class="text-gray-400">
+              Reaching the world with the light and blessings of the Gospel of
+              Jesus Christ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="py-24 bg-[#050505]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <p class="uppercase tracking-[0.35em] text-gold text-sm mb-4">
+            Core Values
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black uppercase">
+            What We
+            <span class="text-gold"> Stand For </span>
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="border border-gold/10 p-8">Love</div>
+          <div class="border border-gold/10 p-8">Faith</div>
+          <div class="border border-gold/10 p-8">Hope</div>
+          <div class="border border-gold/10 p-8">Holiness</div>
+          <div class="border border-gold/10 p-8">Righteousness</div>
+          <div class="border border-gold/10 p-8">Justice</div>
+          <div class="border border-gold/10 p-8">Peace</div>
+          <div class="border border-gold/10 p-8">Prosperity</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
