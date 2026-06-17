@@ -29,31 +29,325 @@ tailwind.config = {
 
 <body class="bg-dark text-white overflow-x-hidden">
 
-<header class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-gold/10">
-  <div class="max-w-7xl mx-auto px-5 lg:px-12">
+ <!-- NAVBAR -->
+ <header
+  class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-gold/10"
+>
+  <div class="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-20">
     <div class="flex items-center justify-between h-20">
-
-      <a href="index.html" class="flex items-center gap-3 min-w-0">
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 md:gap-4">
         <img
           src="./logo/logo.jpeg"
-          class="w-12 h-12 md:w-14 md:h-14 rounded-full border border-gold/30 object-cover"
           alt="Church Logo"
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full border border-gold/30"
         />
 
-        <div class="min-w-0">
-          <h2 class="font-bold uppercase text-xs md:text-sm truncate">
+        <div>
+          <h2
+            class="font-bold uppercase text-xs sm:text-sm leading-tight"
+          >
             Christ Impact Ministries
           </h2>
 
-          <p class="text-[10px] md:text-xs text-gold uppercase tracking-[0.2em] truncate">
+          <p
+            class="text-[10px] sm:text-xs text-gold uppercase tracking-[0.15em]"
+          >
             Doing The Works Of God
           </p>
         </div>
       </a>
 
+      <!-- DESKTOP MENU -->
+      <nav
+        class="hidden xl:flex items-center gap-8 text-[12px] uppercase tracking-[0.18em]"
+      >
+        <!-- HOME -->
+        <a href="index.html" class="hover:text-gold transition">Home</a>
+
+        <!-- ABOUT DROPDOWN -->
+        <div class="relative group">
+          <button class="flex items-center gap-2 hover:text-gold transition">
+            About
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="absolute top-full left-0 mt-4 w-60 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+          >
+            <a
+              href="about.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              About CIMI
+            </a>
+
+            <a
+              href="beliefs.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              What We Believe
+            </a>
+
+            <a
+              href="leadership.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Leadership
+            </a>
+          </div>
+        </div>
+
+        <!-- MINISTRY -->
+        <div class="relative group">
+          <button class="flex items-center gap-2 hover:text-gold transition">
+            Ministry
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="absolute top-full left-0 mt-4 w-64 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+          >
+            <a
+              href="ministries.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Ministries
+            </a>
+
+            <a
+              href="training.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Training & Discipleship
+            </a>
+
+            <a
+              href="missions.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Missions
+            </a>
+
+            <a
+              href="events.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Events
+            </a>
+          </div>
+        </div>
+
+        <!-- MEDIA -->
+        <div class="relative group">
+          <button class="flex items-center gap-2 hover:text-gold transition">
+            Media
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="absolute top-full left-0 mt-4 w-56 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+          >
+            <a
+              href="media.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Sermons & Media
+            </a>
+
+            <a
+              href="gallery.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Gallery
+            </a>
+          </div>
+        </div>
+
+        <!-- GET INVOLVED -->
+        <div class="relative group">
+          <button class="flex items-center gap-2 hover:text-gold transition">
+            Get Involved
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="absolute top-full left-0 mt-4 w-52 bg-[#0A0A0A] border border-gold/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl"
+          >
+            <a
+              href="give.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Give
+            </a>
+
+            <a
+              href="join.html"
+              class="block px-5 py-4 hover:bg-gold hover:text-black transition"
+            >
+              Join The Vision
+            </a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="hover:text-gold transition">
+          Contact
+        </a>
+      </nav>
+
+      <!-- RIGHT SIDE -->
+      <div class="flex items-center gap-4">
+        <!-- CTA -->
+        <a
+          href="contact.html"
+          class="hidden md:inline-flex px-6 py-3 border border-gold text-gold hover:bg-gold hover:text-black transition duration-300 uppercase tracking-widest text-xs"
+        >
+          Worship With Us
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          id="menuBtn"
+          class="xl:hidden text-white hover:text-gold transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div
+    id="mobileMenu"
+    class="hidden xl:hidden bg-[#050505] border-t border-gold/10 max-h-[85vh] overflow-y-auto"
+  >
+    <div class="px-6 py-6 space-y-4 uppercase text-sm tracking-wider">
+      <a href="index.html" class="block py-2">Home</a>
+
+      <details>
+        <summary class="cursor-pointer py-2">About</summary>
+        <div class="pl-4 mt-2 space-y-2 text-gray-400">
+          <a href="about.html" class="block">About CIMI</a>
+          <a href="beliefs.html" class="block">What We Believe</a>
+          <a href="leadership.html" class="block">Leadership</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer py-2">Ministry</summary>
+        <div class="pl-4 mt-2 space-y-2 text-gray-400">
+          <a href="ministries.html" class="block">Ministries</a>
+          <a href="training.html" class="block">Training & Discipleship</a>
+          <a href="missions.html" class="block">Missions</a>
+          <a href="events.html" class="block">Events</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer py-2">Media</summary>
+        <div class="pl-4 mt-2 space-y-2 text-gray-400">
+          <a href="media.html" class="block">Sermons & Media</a>
+          <a href="gallery.html" class="block">Gallery</a>
+        </div>
+      </details>
+
+      <details>
+        <summary class="cursor-pointer py-2">Get Involved</summary>
+        <div class="pl-4 mt-2 space-y-2 text-gray-400">
+          <a href="give.html" class="block">Give</a>
+          <a href="join.html" class="block">Join The Vision</a>
+        </div>
+      </details>
+
+      <a href="contact.html" class="block py-2">Contact</a>
+
+      <a
+        href="contact.html"
+        class="block mt-6 text-center px-6 py-3 border border-gold text-gold"
+      >
+        Worship With Us
+      </a>
     </div>
   </div>
 </header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 
 <section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
 
